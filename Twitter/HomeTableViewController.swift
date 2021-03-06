@@ -24,7 +24,9 @@ class HomeTableViewController: UITableViewController {
         
     }
     @objc func loadTweets(){
-        TwitterAPICaller.client?.getDictionariesRequest(url: "https://api.twitter.com/1.1/statuses/home_timeline.json", parameters: ["count" : 20], success: { (tweets: [NSDictionary]) in
+        
+        numberOfTweets = 20
+        TwitterAPICaller.client?.getDictionariesRequest(url: "https://api.twitter.com/1.1/statuses/home_timeline.json", parameters: ["count" : numberOfTweets as Any], success: { (tweets: [NSDictionary]) in
             
             self.tweetArray.removeAll()
             for tweet in tweets {
@@ -36,6 +38,27 @@ class HomeTableViewController: UITableViewController {
         }, failure: { (Error) in
             print("Could not load tweets")
         })
+    }
+    
+    func loadMoreTweets(){
+        numberOfTweets += 20
+        TwitterAPICaller.client?.getDictionariesRequest(url: "https://api.twitter.com/1.1/statuses/home_timeline.json", parameters: ["count" : numberOfTweets as Any], success: { (tweets: [NSDictionary]) in
+            
+            self.tweetArray.removeAll()
+            for tweet in tweets {
+                self.tweetArray.append(tweet)
+            }
+            self.tableView.reloadData()
+            
+        }, failure: { (Error) in
+            print("Could not load tweets")
+        })
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row + 1 == tweetArray.count {
+            loadMoreTweets()
+        }
     }
     
     @IBAction func onLogout(_ sender: Any) {
