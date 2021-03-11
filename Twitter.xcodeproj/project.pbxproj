@@ -16,6 +16,7 @@
 		BF54043B25F3109F00191AC1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF54043A25F3109F00191AC1 /* LoginViewController.swift */; };
 		BF54043E25F3176D00191AC1 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF54043D25F3176D00191AC1 /* HomeTableViewController.swift */; };
 		BF54044125F320B800191AC1 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF54044025F320B800191AC1 /* TweetTableViewCell.swift */; };
+		BFA766F425FA055500B3B81A /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA766F325FA055500B3B81A /* TweetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		BF54043A25F3109F00191AC1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BF54043D25F3176D00191AC1 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		BF54044025F320B800191AC1 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		BFA766F325FA055500B3B81A /* TweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewController.swift; sourceTree = "<group>"; };
 		C2D685C92646819A9A0DC30C /* Pods-Twitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twitter/Pods-Twitter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 				BF54043A25F3109F00191AC1 /* LoginViewController.swift */,
 				BF54043D25F3176D00191AC1 /* HomeTableViewController.swift */,
 				BF54044025F320B800191AC1 /* TweetTableViewCell.swift */,
+				BFA766F325FA055500B3B81A /* TweetViewController.swift */,
 			);
 			path = Twitter;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			files = (
 				BF54043E25F3176D00191AC1 /* HomeTableViewController.swift in Sources */,
 				BF54043B25F3109F00191AC1 /* LoginViewController.swift in Sources */,
+				BFA766F425FA055500B3B81A /* TweetViewController.swift in Sources */,
 				6EBCF54421E047A500451C03 /* TwitterAPICaller.swift in Sources */,
 				BF54044125F320B800191AC1 /* TweetTableViewCell.swift in Sources */,
 				6EBCF52621DF07FC00451C03 /* AppDelegate.swift in Sources */,
