@@ -61,6 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				6EBCF52421DF07FC00451C03 /* Twitter */,
+				BFA766FE25FA1A2500B3B81A /* Storyboards */,
+				BFA766FC25FA19C400B3B81A /* Controllers */,
+				BFA766FD25FA1A0A00B3B81A /* Cells */,
 				6EBCF52321DF07FC00451C03 /* Products */,
 				6BFB9ED923EC02A96AB79DEE /* Pods */,
 				BE4E6AE53EB27114CB452298 /* Frameworks */,
@@ -78,16 +81,10 @@
 		6EBCF52421DF07FC00451C03 /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
-				6EBCF54D21E71F9400451C03 /* Launch Screen.storyboard */,
-				6EBCF52921DF07FC00451C03 /* Main.storyboard */,
 				6EBCF54321E047A500451C03 /* TwitterAPICaller.swift */,
 				6EBCF52521DF07FC00451C03 /* AppDelegate.swift */,
 				37D29B8521F90E3400984A88 /* Assets.xcassets */,
 				6EBCF53121DF07FE00451C03 /* Info.plist */,
-				BF54043A25F3109F00191AC1 /* LoginViewController.swift */,
-				BF54043D25F3176D00191AC1 /* HomeTableViewController.swift */,
-				BF54044025F320B800191AC1 /* TweetTableViewCell.swift */,
-				BFA766F325FA055500B3B81A /* TweetViewController.swift */,
 			);
 			path = Twitter;
 			sourceTree = "<group>";
@@ -98,6 +95,33 @@
 				872C2D82F41D5A5D2A920E9E /* Pods_Twitter.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFA766FC25FA19C400B3B81A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF54043D25F3176D00191AC1 /* HomeTableViewController.swift */,
+				BF54043A25F3109F00191AC1 /* LoginViewController.swift */,
+				BFA766F325FA055500B3B81A /* TweetViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BFA766FD25FA1A0A00B3B81A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BF54044025F320B800191AC1 /* TweetTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BFA766FE25FA1A2500B3B81A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6EBCF54D21E71F9400451C03 /* Launch Screen.storyboard */,
+				6EBCF52921DF07FC00451C03 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
